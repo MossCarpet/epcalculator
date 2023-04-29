@@ -84,7 +84,7 @@ function draw(){
     fill("black");
     textFont("Helvetica");
     textSize(25);
-    text("Your answer is: " + ep + " J", 270, 450);
+    text("Your answer is: " + ep + " J", 260, 450);
     console.log(ep + " J");
   } else if(Height<0||Mass<0) { // If mass and or height is inputted as negative it will show an error
     fill("black");
