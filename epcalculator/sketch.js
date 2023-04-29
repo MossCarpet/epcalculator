@@ -74,7 +74,7 @@ function draw(){
   }
   textFont(kanit);
   textSize("14");
-  text("Set Height", 460,310);
+  text("Set Height", 460, 310);
 
   btnclr = color("black");
 
@@ -98,6 +98,19 @@ function draw(){
     textSize(25);
     text("Please input Mass and Height", 213, 450);
   }
+
+  fill("black");
+  textFont("Helvetica");
+  textSize(30);
+  text("Keybinds", 300, 550);
+  fill("black")
+  textFont("Helvetica");
+  textSize(23)
+  text("J = Increase Mass", 276, 605)
+  fill("black")
+  textFont("Helvetica");
+  textSize(23)
+  text("K = Increase Height", 272, 645)
 
   // Changes the cursor if hovering on either buttons (|| = "or")
   if(mouseX>=100&&mouseX<=300&&mouseY>=250&&mouseY<=350||mouseX>=430&&mouseX<=630&&mouseY>=250&&mouseY<=350) {
@@ -144,7 +157,19 @@ function mousePressed(){
 }
 
 function keyPressed() {
-  if(keyCode=="J"){
-    
+  if(keyCode==74){
+    Mass = Mass - -1
+  }
+
+  if(keyCode==75){
+    Height = Height- -1
+  }
+
+  if(keyCode==78){
+    Mass = Mass - 1
+  }
+
+  if(keyCode==77){
+    Height = Height - 1
   }
 }
