@@ -9,7 +9,6 @@ Notes:
 let Mass = 0 
 let Gravity = 9.81
 let Height = 0
-let rows = 600;
 
 let massButtonColor = "black"
 
@@ -177,25 +176,21 @@ function mousePressed(){
   }
 }
 
-// When J, K, N,M are pressed this function is ran and mass and or height are changed. The "rows" variable is increased by 40
+// When J, K, N,M are pressed this function is ran and mass and or height are changed.
 function keyPressed() {
   if(keyCode==74){
-    rows = rows + 40
     Mass = Mass - -1
   }
 
   if(keyCode==75){
-    rows = rows + 40
     Height = Height- -1
   }
 
   if(keyCode==78){
-    rows = rows + 40
     Mass = Mass - 1
   }
 
   if(keyCode==77){
-    rows = rows + 40
     Height = Height - 1
   }
 }
